@@ -18,7 +18,7 @@
 			  </tr>
 			  <xsl:for-each select="contact-info/student">
 			  <tr>
-				<td><script>i = i + 1; document.write(i);</script></td>
+				<td><script>i = i + 1; document.writeln(i);</script></td>
 				<td><xsl:value-of select="lastname"/></td>
 				<td><xsl:value-of select="firstname"/></td>
 				<td><xsl:value-of select="middle_name"/></td>
