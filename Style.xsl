@@ -4,7 +4,7 @@
 	  <html>
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
-			<h2>Группа 91-ИБ</h2>
+			<center><h2>Группа 91-ИБ</h2>
 			<table border="1">
 			  <tr bgcolor="#9acd32">
 				<th>Фамилия</th>
@@ -24,7 +24,7 @@
 				<td><xsl:value-of select="phone"/></td>
 			  </tr>
 			  </xsl:for-each>
-			</table>
+			</table></center>
 		  </body>
 	  </html>
 	</xsl:template>
