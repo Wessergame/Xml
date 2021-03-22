@@ -4,9 +4,30 @@
 	  <html>
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
+			<style>
+				.demotable {
+				  border-collapse: collapse;
+				  counter-reset: schetchik;
+				}
+				.demotable tr {
+				  counter-increment: schetchik;
+				}
+				.demotable td,
+				.demotable tr:before {
+				  padding: .1em .5em;
+				  border: 1px solid #E7D5C0;
+				}
+				.demotable tr:before {
+				  content: counter(schetchik); 
+				  display: table-cell;
+				  vertical-align: middle;
+				  color: #978777;
+				}
+			</style>
 			<center><h2>Группа 91-ИБ</h2>
 			<table border="1">
 			  <tr bgcolor="#9acd32">
+				<th>№</th>
 				<th>Фамилия</th>
 				<th>Имя</th>
 				<th>Отчество</th>
@@ -16,6 +37,7 @@
 			  </tr>
 			  <xsl:for-each select="contact-info/student">
 			  <tr>
+				<td class="demotable"></td>
 				<td><xsl:value-of select="lastname"/></td>
 				<td><xsl:value-of select="firstname"/></td>
 				<td><xsl:value-of select="middle_name"/></td>
