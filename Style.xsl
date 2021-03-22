@@ -6,8 +6,10 @@
 		  <body>
 			<style>
 				.demotable {
-				  border-collapse: collapse;
 				  counter-reset: schetchik;
+				}
+				.demotable table {
+				  border-collapse: collapse;
 				}
 				.demotable tr {
 				  counter-increment: schetchik;
@@ -18,7 +20,7 @@
 				  border: 1px solid #E7D5C0;
 				}
 				.demotable tr:before {
-				  content: counter(schetchik); 
+				  content: counter(schetchik);
 				  display: table-cell;
 				  vertical-align: middle;
 				  color: #978777;
@@ -36,8 +38,8 @@
 				<th>Номер телефона</th>
 			  </tr>
 			  <xsl:for-each select="contact-info/student">
+			  <div class="demotable">
 			  <tr>
-				<td class="demotable"></td>
 				<td><xsl:value-of select="lastname"/></td>
 				<td><xsl:value-of select="firstname"/></td>
 				<td><xsl:value-of select="middle_name"/></td>
@@ -45,6 +47,7 @@
 				<td><xsl:value-of select="number_recordbook"/></td>
 				<td><xsl:value-of select="phone"/></td>
 			  </tr>
+			  </div>
 			  </xsl:for-each>
 			</table></center>
 		  </body>
