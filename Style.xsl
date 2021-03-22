@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="https://raw.githubusercontent.com/Wessergame/Xml/main/Style.xsl">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 	<xsl:template match="/">
 	  <html>
 	  <head><title>Группа 91-ИБ</title></head>
