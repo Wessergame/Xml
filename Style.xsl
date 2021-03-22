@@ -4,21 +4,6 @@
 	  <html>
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
-			<style>
-				table {
-					counter-reset: rowNumber;
-				}
-
-				table tbody tr {
-					counter-increment: rowNumber;
-				}
-
-				table tr td:first-child::before {
-					content: counter(rowNumber);
-					min-width: 1em;
-					margin-right: 0.5em;
-				}
-			</style>
 			<center><h2>Группа 91-ИБ</h2>
 			<table border="1">
 			  <tr bgcolor="#9acd32">
@@ -32,6 +17,7 @@
 			  </tr>
 			  <xsl:for-each select="contact-info/student">
 			  <tr>
+				<td><ol><li></li></ol></td>
 				<td><xsl:value-of select="lastname"/></td>
 				<td><xsl:value-of select="firstname"/></td>
 				<td><xsl:value-of select="middle_name"/></td>
