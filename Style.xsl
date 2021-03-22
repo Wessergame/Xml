@@ -5,25 +5,18 @@
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
 			<style>
-				.demotable {
-				  counter-reset: schetchik;
+				table {
+					counter-reset: rowNumber;
 				}
-				.demotable table {
-				  border-collapse: collapse;
+
+				table tbody tr {
+					counter-increment: rowNumber;
 				}
-				.demotable tr {
-				  counter-increment: schetchik;
-				}
-				.demotable td,
-				.demotable tr:before {
-				  padding: .1em .5em;
-				  border: 1px solid #E7D5C0;
-				}
-				.demotable tr:before {
-				  content: counter(schetchik);
-				  display: table-cell;
-				  vertical-align: middle;
-				  color: #978777;
+
+				table tr td:first-child::before {
+					content: counter(rowNumber);
+					min-width: 1em;
+					margin-right: 0.5em;
 				}
 			</style>
 			<center><h2>Группа 91-ИБ</h2>
@@ -38,7 +31,6 @@
 				<th>Номер телефона</th>
 			  </tr>
 			  <xsl:for-each select="contact-info/student">
-			  <div class="demotable">
 			  <tr>
 				<td><xsl:value-of select="lastname"/></td>
 				<td><xsl:value-of select="firstname"/></td>
@@ -47,7 +39,6 @@
 				<td><xsl:value-of select="number_recordbook"/></td>
 				<td><xsl:value-of select="phone"/></td>
 			  </tr>
-			  </div>
 			  </xsl:for-each>
 			</table></center>
 		  </body>
