@@ -4,7 +4,7 @@
 	  <html>
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
-			<script xmlns="http://www.w3.org/1999/xhtml">var i = 0;</script>
+			<script type="text/javascript"><xsl:text>var i = 0;</xsl:text></script>
 			<center><h2>Группа 91-ИБ</h2>
 			<table border="1">
 			  <tr bgcolor="#9acd32">
@@ -18,7 +18,7 @@
 			  </tr>
 			  <xsl:for-each select="contact-info/student">
 			  <tr>
-				<td><script>i = i + 1; document.writeln(i);</script></td>
+				<td><script type="text/javascript"><xsl:text>i = i + 1; document.writeln(i);</xsl:text></script>
 				<td><xsl:value-of select="lastname"/></td>
 				<td><xsl:value-of select="firstname"/></td>
 				<td><xsl:value-of select="middle_name"/></td>
