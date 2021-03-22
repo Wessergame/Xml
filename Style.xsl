@@ -4,7 +4,7 @@
 	  <html>
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
-			<script>var i = 0;</script>
+			<script xmlns="http://www.w3.org/1999/xhtml">var i = 0;</script>
 			<center><h2>Группа 91-ИБ</h2>
 			<table border="1">
 			  <tr bgcolor="#9acd32">
