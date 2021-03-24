@@ -1,10 +1,19 @@
 <?xml version="1.0"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 	<xsl:template match="/">
 	  <html>
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
-			<script type="text/javascript"><xsl:text>var i = 0;</xsl:text></script>
+			<script type="text/javascript">
+				var i = 0;
+				function sum(i)
+				{
+					i = i + 1;
+					return i;
+				}
+			</script>
 			<center><h2>Группа 91-ИБ</h2>
 			<table border="1">
 			  <tr bgcolor="#9acd32">
@@ -18,7 +27,7 @@
 			  </tr>
 			  <xsl:for-each select="contact-info/student">
 			  <tr>
-				<td><script><xsl:text>i = i + 1; document.writeln(i);</xsl:text></script></td>
+				<td><script type="text/javascript">i = i + 1; document.writeln(i);</script></td>
 				<td><xsl:value-of select="lastname"/></td>
 				<td><xsl:value-of select="firstname"/></td>
 				<td><xsl:value-of select="middle_name"/></td>
