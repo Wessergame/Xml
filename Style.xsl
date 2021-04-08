@@ -6,9 +6,6 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 	  <html>
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
-			<script type="text/javascript">
-				
-			</script>
 			<center><h2>Группа 91-ИБ</h2>
 			<table border="1">
 			  <tr bgcolor="#9acd32">
