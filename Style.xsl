@@ -7,17 +7,11 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 	  <head><title>Группа 91-ИБ</title></head>
 		  <body>
 			<script type="text/javascript">
-				var i = 0;
-				function sum(i)
-				{
-					i = i + 1;
-					return i;
-				}
+				
 			</script>
 			<center><h2>Группа 91-ИБ</h2>
 			<table border="1">
 			  <tr bgcolor="#9acd32">
-				<th>№</th>
 				<th>Фамилия</th>
 				<th>Имя</th>
 				<th>Отчество</th>
@@ -27,7 +21,6 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 			  </tr>
 			  <xsl:for-each select="contact-info/student">
 			  <tr>
-				<td><script type="text/javascript">i = i + 1; document.writeln(i);</script></td>
 				<td><xsl:value-of select="lastname"/></td>
 				<td><xsl:value-of select="firstname"/></td>
 				<td><xsl:value-of select="middle_name"/></td>
